@@ -21,9 +21,8 @@ function igPay(text) {
       console.log(text[i])
       console.log(text.length)
       if (consonantArrayNoQ.includes(text[i])) {
-        consonantString = consonantString.concat(text);
+        consonantString = consonantString.concat(text.slice(0, i));
         console.log(consonantString);
-        return consonantString;
-      }
-    }
-  }
+      }  return consonantString;
+      }}
+  
