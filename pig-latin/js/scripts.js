@@ -12,3 +12,18 @@ function igPay(text) {
     return false;
   }
   }
+// above is good!
+
+  let consonantString = "";
+
+  function igPay(text) {
+    for (let i=0; i < text.length; i += 1) {
+      console.log(text[i])
+      console.log(text.length)
+      if (consonantArrayNoQ.includes(text[i])) {
+        consonantString = consonantString.concat(text);
+        console.log(consonantString);
+        return consonantString;
+      }
+    }
+  }
