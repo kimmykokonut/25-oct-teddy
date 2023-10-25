@@ -6,7 +6,7 @@ function igPay(text) {
     return result;
   } else if (consonantArrayNoQ.includes(text[0])) {
     let sliceText = text.slice(1);
-    let result = sliceText.concat(text[0]);
+    let result = sliceText.concat(text[0] + 'ay');
     return result;
   } else {
     return false;
